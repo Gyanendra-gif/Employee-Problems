@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EmployeCalculation
 {
-    class EmployeeAttendess
+    class EmployeeWageCalculation
     {
         const int Present = 1;
         public void EmployeeCheck()
