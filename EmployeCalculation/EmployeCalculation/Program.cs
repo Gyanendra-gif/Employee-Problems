@@ -6,8 +6,8 @@ namespace EmployeCalculation
     {
         static void Main(string[] args)
         {
-            EmployeeAttendess empAtt = new EmployeeAttendess();
-            empAtt.EmployeeCheck();
+            EmployeeWageCalculation empAtt = new EmployeeWageCalculation();
+            empAtt.EmployeeDailyWag();
         }
     }
 }
