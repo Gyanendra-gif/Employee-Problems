@@ -6,7 +6,7 @@ namespace EmployeCalculation
 {
     class EmployeeWageCalculation
     {
-        const int Present = 1;
+        const int PRESENT = 1;
         public void EmployeeCheck()
         {
             Random rand = new Random();
