@@ -20,11 +20,12 @@ namespace EmployeCalculation
             {
                 this.TOTAL_HOUR = HALF_DAY_HOUR;
             }
+
             else
                 Console.WriteLine("Employee is Absent");
 
-            this.totalSalary = WAGE_PR_HR * TOTAL_HOUR;
-            Console.WriteLine("Employee Salary is: " + this.totalSalary);
+            this.totalSalary = WAGE_PR_HR * FULL_DAY_HOUR;
+            Console.WriteLine("Employee is Present and Salary is: " + this.totalSalary);
         }
     }
 }
