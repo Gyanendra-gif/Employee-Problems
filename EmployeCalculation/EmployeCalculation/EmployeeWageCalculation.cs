@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -25,10 +25,8 @@ namespace EmployeCalculation
                         Console.WriteLine("Employee is Absent for the Day");
                         break;
                 }
-
             this.totalSalary = WAGE_PR_HR * empHr;
             Console.WriteLine("Here is the Monthly Salary of Emp." + this.totalSalary);
-
         }
     }
 }
