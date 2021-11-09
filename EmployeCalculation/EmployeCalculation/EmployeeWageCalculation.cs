@@ -6,7 +6,7 @@ namespace EmployeCalculation
 {
     class EmployeeWageCalculation
     {
-        public const int WAGE_PR_HR = 20, FULL_DAY_HOUR = 8, HALF_DAY_HOUR = 4, Present = 1, HalfDay = 2, totalDays = 20, totalHr = 100;
+        public const int WAGE_PR_HR = 20, FULL_DAY_HOUR = 8, HALF_DAY_HOUR = 4, PRESENT = 1, HALF_DAY = 2, TOTAL_DAYS = 20, TOTAL_HOUR = 100;
         int totalSalary, empHr;
         public void MonthlyEmployeeWage()
         {
@@ -15,10 +15,10 @@ namespace EmployeCalculation
             for (int i = 0; i < totalDays && i < totalHr ; i++)
                 switch (empCheck)
                 {
-                    case Present:
+                    case PRESENT:
                         this.empHr += FULL_DAY_HOUR;
                         break;
-                    case HalfDay:
+                    case HALF_DAY:
                         this.empHr += HALF_DAY_HOUR;
                         break;
                     default:
