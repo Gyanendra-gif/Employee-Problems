@@ -12,13 +12,13 @@ namespace EmployeCalculation
         {
             Random rand = new Random();
             int empCheck = rand.Next(0, 3);
-            for (int i = 0; i < totalDays; i++)
+            for (int i = 0; i < TOTAL_DAYS; i++)
                 switch (empCheck)
                 {
-                    case Present:
+                    case PRESENT:
                         this.empHr += FULL_DAY_HOUR;
                         break;
-                    case HalfDay:
+                    case HALF_DAY:
                         this.empHr += HALF_DAY_HOUR;
                         break;
                     default:
