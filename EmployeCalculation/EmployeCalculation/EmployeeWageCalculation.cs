@@ -6,7 +6,7 @@ namespace EmployeCalculation
 {
     class EmployeeWageCalculation
     {
-        public const int WAGE_PR_HR = 20, FULL_DAY_HOUR = 8, HALF_DAY_HOUR = 4, Present = 1, HalfDay = 2, totalDays = 20;
+        public const int WAGE_PR_HR = 20, FULL_DAY_HOUR = 8, HALF_DAY_HOUR = 4, PRESENT = 1, HALF_DAY = 2, TOTAL_DAYS = 20;
         int totalSalary, empHr;
         public void MonthlyEmployeeWage()
         {
