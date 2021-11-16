@@ -6,17 +6,13 @@ namespace EmployeCalculation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Company Name: ");
-            string company =Console.ReadLine();
-            Console.WriteLine("Enter the Rate per Hour: ");
-            int empRatePrHr = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Number of Working Days: ");
-            int numOfWorkingDays = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the Number of Max Hour Per Month: ");
-            int maxHourPrMonth = Convert.ToInt32(Console.ReadLine());
-
-            EmployeeWageCalculation empWage = new EmployeeWageCalculation();
-            empWage.ComputeEmployeeWage( company,  empRatePrHr,  numOfWorkingDays, maxHourPrMonth);
+            Console.WriteLine("Welcome to the Employee Wage Computation Problem");
+            EmpWageBuilderObject infosys = new EmpWageBuilderObject("Infosys", 10, 50, 200);
+            EmpWageBuilderObject wipro = new EmpWageBuilderObject("Wipro", 30, 54, 150);
+            infosys.computeEmpWage();
+            Console.WriteLine(infosys.toString());
+            wipro.computeEmpWage();
+            Console.WriteLine(wipro.toString());
         }
     }
 }
